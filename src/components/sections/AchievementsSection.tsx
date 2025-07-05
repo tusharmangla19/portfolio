@@ -3,7 +3,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
-import { Trophy, Code, Users, Target, Award, BookOpen } from "lucide-react";
+import { Trophy, Code, Users, Award, BookOpen } from "lucide-react";
 
 export function AchievementsSection() {
   const achievements = [
@@ -49,20 +49,6 @@ export function AchievementsSection() {
       color: "text-purple-500",
       bgColor: "bg-purple-50",
     },
-    {
-      title: "Live Application Users",
-      description: "Spiritual Tracker application serving 20+ active users with positive feedback",
-      icon: <Target className="h-6 w-6" />,
-      category: "Impact & Reach",
-      highlights: [
-        "20+ active users",
-        "Positive user feedback",
-        "Live production application",
-        "Community engagement features",
-      ],
-      color: "text-orange-500",
-      bgColor: "bg-orange-50",
-    },
   ];
 
   const stats = [
@@ -97,7 +83,7 @@ export function AchievementsSection() {
           transition={{ duration: 0.8 }}
           className="text-center space-y-4 mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
             Achievements & Recognition
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -132,7 +118,7 @@ export function AchievementsSection() {
         </motion.div>
 
         {/* Achievements Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {achievements.map((achievement, index) => (
             <motion.div
               key={index}

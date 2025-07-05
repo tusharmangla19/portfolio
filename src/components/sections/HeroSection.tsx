@@ -77,9 +77,9 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-center space-y-8"
+          className="text-center space-y-6 md:space-y-8"
         >
-          <div className="flex justify-center">
+          <div className="flex justify-center mb-6">
             <motion.div
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
@@ -87,9 +87,9 @@ export function HeroSection() {
               className="relative"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-xl opacity-30 animate-pulse"></div>
-              <Avatar className="h-32 w-32 relative z-10 hover-lift">
+              <Avatar className="h-24 w-24 sm:h-28 sm:w-28 md:h-32 md:w-32 relative z-10 hover-lift">
                 <AvatarImage src="/images/image.jpg" alt="Tushar Mangla" className="object-cover" />
-                <AvatarFallback className="text-3xl bg-gradient-to-br from-blue-500 to-purple-500 text-white">TM</AvatarFallback>
+                <AvatarFallback className="text-2xl sm:text-3xl bg-gradient-to-br from-blue-500 to-purple-500 text-white">TM</AvatarFallback>
               </Avatar>
             </motion.div>
           </div>
@@ -99,7 +99,7 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-4xl md:text-6xl font-bold gradient-text animate-gradient"
+              className="text-3xl sm:text-4xl md:text-6xl font-bold gradient-text animate-gradient"
             >
               Tushar Mangla
             </motion.h1>
@@ -135,7 +135,7 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
-              className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto"
+              className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto"
             >
               A passionate developer with experience in building scalable web applications,
               mobile apps, and blockchain solutions. Currently pursuing MCA with hands-on

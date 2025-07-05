@@ -9,28 +9,28 @@ import { Mail, MessageSquare, Download } from "lucide-react";
 export function ContactSection() {
   const contactInfo = [
     {
-      icon: <FaEnvelope className="h-5 w-5" />,
       label: "Email",
       value: "tusharmangla.dev@gmail.com",
       href: "mailto:tusharmangla.dev@gmail.com",
-      color: "text-red-500",
-      bgColor: "bg-red-50",
+      icon: <Mail className="h-6 w-6" />,
+      color: "text-blue-500",
+      bgColor: "bg-blue-50",
     },
     {
-      icon: <FaPhone className="h-5 w-5" />,
       label: "Phone",
       value: "+91 9205608639",
       href: "tel:+919205608639",
+      icon: <FaPhone className="h-6 w-6" />,
       color: "text-green-500",
       bgColor: "bg-green-50",
     },
     {
-      icon: <FaMapMarkerAlt className="h-5 w-5" />,
       label: "Location",
-      value: "Faridabad, Haryana",
-      href: "https://maps.google.com/?q=Faridabad,Haryana",
-      color: "text-blue-500",
-      bgColor: "bg-blue-50",
+      value: "Faridabad, Haryana, India",
+      href: "https://maps.google.com/?q=Faridabad,Haryana,India",
+      icon: <FaMapMarkerAlt className="h-6 w-6" />,
+      color: "text-purple-500",
+      bgColor: "bg-purple-50",
     },
   ];
 
@@ -38,21 +38,21 @@ export function ContactSection() {
     {
       name: "GitHub",
       url: "https://github.com/tusharmangla19",
-      icon: <FaGithub className="h-6 w-6" />,
-      color: "hover:text-gray-900",
+      icon: <FaGithub className="h-5 w-5" />,
+      color: "hover:text-gray-700",
       bgColor: "hover:bg-gray-50",
     },
     {
       name: "LinkedIn",
       url: "https://linkedin.com/in/tushar-mangla",
-      icon: <FaLinkedin className="h-6 w-6" />,
+      icon: <FaLinkedin className="h-5 w-5" />,
       color: "hover:text-blue-600",
       bgColor: "hover:bg-blue-50",
     },
     {
       name: "Email",
       url: "mailto:tusharmangla.dev@gmail.com",
-      icon: <FaEnvelope className="h-6 w-6" />,
+      icon: <FaEnvelope className="h-5 w-5" />,
       color: "hover:text-red-600",
       bgColor: "hover:bg-red-50",
     },
@@ -141,23 +141,23 @@ export function ContactSection() {
               <Card className="p-6 space-y-6">
                 <div className="space-y-4">
                   <h4 className="font-semibold text-foreground">Social Media</h4>
-                  <div className="flex gap-4">
+                  <div className="flex flex-col sm:flex-row sm:gap-3 gap-3">
                     {socialLinks.map((social, index) => (
                       <Button
                         key={index}
                         variant="outline"
-                        size="lg"
+                        size="sm"
                         asChild
-                        className={`transition-all ${social.color} ${social.bgColor}`}
+                        className={`flex-1 sm:flex-none transition-all ${social.color} ${social.bgColor}`}
                       >
                         <a
                           href={social.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-2"
+                          className="flex items-center justify-center gap-2"
                         >
                           {social.icon}
-                          {social.name}
+                          <span className="text-sm">{social.name}</span>
                         </a>
                       </Button>
                     ))}
