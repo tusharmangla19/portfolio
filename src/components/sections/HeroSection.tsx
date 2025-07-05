@@ -71,7 +71,7 @@ export function HeroSection() {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center section-bg-alt">
+    <section id="hero" className="min-h-screen flex items-center justify-center section-bg-alt pt-20">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -79,15 +79,15 @@ export function HeroSection() {
           transition={{ duration: 0.5 }}
           className="text-center space-y-6 md:space-y-8"
         >
-          <div className="flex justify-center mb-6">
+          <div className="flex justify-center py-6 md:py-0">
             <motion.div
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="relative"
+              className="relative p-4 md:p-0"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-xl opacity-30 animate-pulse"></div>
-              <Avatar className="h-24 w-24 sm:h-28 sm:w-28 md:h-32 md:w-32 relative z-10 hover-lift">
+              <Avatar className="h-24 w-24 sm:h-28 sm:w-28 md:h-32 md:w-32 relative z-10 hover-lift border-4 border-white/10 shadow-2xl">
                 <AvatarImage src="/images/image.jpg" alt="Tushar Mangla" className="object-cover" />
                 <AvatarFallback className="text-2xl sm:text-3xl bg-gradient-to-br from-blue-500 to-purple-500 text-white">TM</AvatarFallback>
               </Avatar>
@@ -99,7 +99,7 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-3xl sm:text-4xl md:text-6xl font-bold gradient-text animate-gradient"
+              className="text-3xl sm:text-4xl md:text-6xl font-bold gradient-text animate-gradient leading-tight py-2"
             >
               Tushar Mangla
             </motion.h1>
@@ -135,7 +135,7 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
-              className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto"
+              className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4"
             >
               A passionate developer with experience in building scalable web applications,
               mobile apps, and blockchain solutions. Currently pursuing MCA with hands-on
@@ -148,7 +148,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-4xl mx-auto"
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-4xl mx-auto px-4"
           >
             {highlights.map((highlight, index) => (
               <motion.div
@@ -178,7 +178,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.8 }}
-            className="flex flex-wrap justify-center gap-4"
+            className="flex flex-wrap justify-center gap-4 px-4"
           >
             {socialLinks.map((link, index) => (
               <Button
@@ -205,7 +205,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.9 }}
-            className="flex flex-col sm:flex-row justify-center gap-4"
+            className="flex flex-col sm:flex-row justify-center gap-4 px-4"
           >
             <Button
               size="lg"
