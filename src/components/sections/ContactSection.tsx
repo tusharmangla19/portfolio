@@ -196,7 +196,7 @@ export function ContactSection() {
                 <MessageSquare className="h-12 w-12 mx-auto text-primary" />
                 <div className="space-y-2">
                   <h3 className="text-xl font-semibold text-foreground">
-                    Let's Work Together
+                    Let&apos;s Work Together
                   </h3>
                   <p className="text-muted-foreground max-w-md mx-auto">
                     I&apos;m currently open to new opportunities and exciting projects. 
