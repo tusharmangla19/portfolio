@@ -7,6 +7,7 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { Building2, Code, Target, FolderOpen, GraduationCap, FileText } from "lucide-react";
+import { smoothScrollToSection } from "@/lib/utils";
 
 export function HeroSection() {
   const socialLinks = [
@@ -66,10 +67,7 @@ export function HeroSection() {
   ];
 
   const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+    smoothScrollToSection(href);
   };
 
   return (
@@ -78,19 +76,19 @@ export function HeroSection() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.5 }}
           className="text-center space-y-8"
         >
           <div className="flex justify-center">
             <motion.div
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
               className="relative"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-xl opacity-30 animate-pulse"></div>
               <Avatar className="h-32 w-32 relative z-10 hover-lift">
-                <AvatarImage src="/profile.jpg" alt="Tushar Mangla" />
+                <AvatarImage src="/images/image.jpg" alt="Tushar Mangla" className="object-cover" />
                 <AvatarFallback className="text-3xl bg-gradient-to-br from-blue-500 to-purple-500 text-white">TM</AvatarFallback>
               </Avatar>
             </motion.div>
@@ -100,7 +98,7 @@ export function HeroSection() {
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
               className="text-4xl md:text-6xl font-bold gradient-text animate-gradient"
             >
               Tushar Mangla
@@ -109,7 +107,7 @@ export function HeroSection() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
               className="flex flex-wrap justify-center gap-2"
             >
               <Badge variant="secondary" className="gradient-card hover-lift">
@@ -126,7 +124,7 @@ export function HeroSection() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
               className="flex items-center justify-center gap-2 text-muted-foreground"
             >
               <FaMapMarkerAlt className="h-4 w-4 text-blue-500" />
@@ -136,7 +134,7 @@ export function HeroSection() {
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1.0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
               className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto"
             >
               A passionate developer with experience in building scalable web applications,
@@ -149,7 +147,7 @@ export function HeroSection() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.2 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
             className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-4xl mx-auto"
           >
             {highlights.map((highlight, index) => (
@@ -157,7 +155,7 @@ export function HeroSection() {
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 1.2 + index * 0.1 }}
+                transition={{ duration: 0.4, delay: 0.6 + index * 0.05 }}
               >
                 <Card className="gradient-card hover-lift hover-glow transition-all duration-300 p-4 text-center">
                   <div className="space-y-2">
@@ -179,7 +177,7 @@ export function HeroSection() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.4 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
             className="flex flex-wrap justify-center gap-4"
           >
             {socialLinks.map((link, index) => (
@@ -206,7 +204,7 @@ export function HeroSection() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.6 }}
+            transition={{ duration: 0.5, delay: 0.9 }}
             className="flex flex-col sm:flex-row justify-center gap-4"
           >
             <Button

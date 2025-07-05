@@ -125,6 +125,7 @@
 /* Custom styles for the portfolio */
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Account for fixed navigation */
 }
 
 /* Smooth scrolling for webkit browsers */
@@ -132,6 +133,11 @@ html {
   html {
     scroll-behavior: smooth;
   }
+}
+
+/* Enhanced smooth scroll */
+* {
+  scroll-padding-top: 80px; /* Account for fixed navigation */
 }
 
 /* Custom scrollbar */

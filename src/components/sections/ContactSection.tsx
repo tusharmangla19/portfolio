@@ -1,10 +1,10 @@
 "use client";
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-import { Mail, Phone, MapPin, MessageSquare, Download } from "lucide-react";
+import { Mail, MessageSquare, Download } from "lucide-react";
 
 export function ContactSection() {
   const contactInfo = [
@@ -71,7 +71,7 @@ export function ContactSection() {
             Get In Touch
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            I'm always open to discussing new opportunities, collaborating on interesting projects, 
+            I&apos;m always open to discussing new opportunities, collaborating on interesting projects, 
             or just having a chat about technology and development.
           </p>
         </motion.div>
@@ -199,8 +199,8 @@ export function ContactSection() {
                     Let's Work Together
                   </h3>
                   <p className="text-muted-foreground max-w-md mx-auto">
-                    I'm currently open to new opportunities and exciting projects. 
-                    Whether you're looking for a developer or want to collaborate, I'd love to hear from you.
+                    I&apos;m currently open to new opportunities and exciting projects. 
+                    Whether you&apos;re looking for a developer or want to collaborate, I&apos;d love to hear from you.
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -9,7 +9,7 @@ import { ExternalLink, Github, Play, Users, ChevronDown, ChevronUp } from "lucid
 import { useState } from "react";
 
 export function ProjectsSection() {
-  const [selectedProject, setSelectedProject] = useState<number | null>(null);
+
   const [showAllProjects, setShowAllProjects] = useState(false);
 
   const featuredProjects = [

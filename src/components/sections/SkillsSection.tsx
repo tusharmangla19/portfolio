@@ -11,7 +11,6 @@ import {
   Shield, 
   Brain, 
   Layers,
-  Zap,
   Target,
   Trophy
 } from "lucide-react";

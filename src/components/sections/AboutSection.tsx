@@ -111,8 +111,8 @@ export function AboutSection() {
                 </h3>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    Hey there! I'm currently pursuing my <span className="gradient-text-purple font-semibold">Master of Computer Applications (MCA)</span> 
-                    at Vivekananda Institute of Professional Studies, where I've been diving deep into 
+                    Hey there! I&apos;m currently pursuing my <span className="gradient-text-purple font-semibold">Master of Computer Applications (MCA)</span> 
+                    at Vivekananda Institute of Professional Studies, where I&apos;ve been diving deep into 
                     advanced software development concepts and emerging technologies.
                   </p>
                   <p>
@@ -123,7 +123,7 @@ export function AboutSection() {
                   <p>
                     What drives me is the intersection of <span className="gradient-text-warm font-semibold">creativity and technology</span>. 
                     I love taking complex problems and breaking them down into elegant, user-friendly solutions. 
-                    Whether it's building responsive web applications, developing mobile apps, or exploring 
+                    Whether it&apos;s building responsive web applications, developing mobile apps, or exploring 
                     modern web technologies, I approach each project with curiosity and a commitment to excellence.
                   </p>
                 </div>
@@ -192,7 +192,7 @@ export function AboutSection() {
                   Beyond the Code
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  When I'm not coding, you'll find me exploring the latest tech trends, contributing to open-source projects, 
+                  When I&apos;m not coding, you&apos;ll find me exploring the latest tech trends, contributing to open-source projects, 
                   or brainstorming the next big idea. I believe that great software comes from understanding not just the 
                   technology, but the people who use it.
                 </p>

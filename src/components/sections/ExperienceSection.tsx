@@ -3,7 +3,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
-import { MapPin, Calendar, Building2, Users, Code, Target } from "lucide-react";
+import { MapPin, Calendar, Building2, Users, Target } from "lucide-react";
 
 export function ExperienceSection() {
   return (

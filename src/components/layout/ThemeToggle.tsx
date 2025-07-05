@@ -1,6 +1,6 @@
 "use client";
 
-import { Moon, Sun } from "lucide-react";
+import { Moon, Sun, Monitor } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
@@ -18,20 +18,48 @@ export function ThemeToggle() {
     return null;
   }
 
-  const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
+  const cycleTheme = () => {
+    if (theme === "system") {
+      setTheme("light");
+    } else if (theme === "light") {
+      setTheme("dark");
+    } else {
+      setTheme("system");
+    }
+  };
+
+  const getThemeIcon = () => {
+    switch (theme) {
+      case "light":
+        return <Sun className="h-4 w-4" />;
+      case "dark":
+        return <Moon className="h-4 w-4" />;
+      default:
+        return <Monitor className="h-4 w-4" />;
+    }
+  };
+
+  const getThemeLabel = () => {
+    switch (theme) {
+      case "light":
+        return "Switch to Dark theme";
+      case "dark":
+        return "Switch to System theme";
+      default:
+        return "Switch to Light theme";
+    }
   };
 
   return (
     <Button
       variant="ghost"
       size="icon"
-      onClick={toggleTheme}
+      onClick={cycleTheme}
       className="relative h-9 w-9 rounded-lg transition-colors hover:bg-muted"
+      title={getThemeLabel()}
     >
-      <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-      <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-      <span className="sr-only">Toggle theme</span>
+      {getThemeIcon()}
+      <span className="sr-only">{getThemeLabel()}</span>
     </Button>
   );
 } 

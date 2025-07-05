@@ -4,10 +4,10 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
+import { smoothScrollToSection } from "@/lib/utils";
 
 const navItems = [
   { href: "#hero", label: "Home" },
-  { href: "#about", label: "About" },
   { href: "#experience", label: "Experience" },
   { href: "#skills", label: "Skills" },
   { href: "#projects", label: "Projects" },
@@ -30,11 +30,8 @@ export function Navigation() {
   }, []);
 
   const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setIsMobileMenuOpen(false);
-    }
+    smoothScrollToSection(href);
+    setIsMobileMenuOpen(false);
   };
 
   return (
