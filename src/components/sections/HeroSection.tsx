@@ -148,9 +148,7 @@ export function HeroSection() {
               transition={{ duration: 0.5, delay: 0.5 }}
               className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4"
             >
-              A passionate developer with experience in building scalable web applications,
-              mobile apps, and blockchain solutions. Currently pursuing MCA with hands-on
-              experience in React, React Native, and modern web technologies.
+             MCA graduate and full-stack developer specializing in end-to-end application development. Building everything from AI-powered tools to multiplayer platforms across web and mobile.
             </motion.p>
           </div>
 
