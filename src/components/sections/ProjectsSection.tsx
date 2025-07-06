@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Play, Users, ChevronDown, ChevronUp } from "lucide-react";
+import { ExternalLink, Github, Users, ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
 
 export function ProjectsSection() {
@@ -18,7 +18,7 @@ export function ProjectsSection() {
       titleGradient: "gradient-text-blue",
       description: "A journaling application with AI features including AI-powered writing suggestions, image to text conversion, mood analytics, and daily reflection prompts.",
       longDescription: "Mindly is an intelligent journaling platform that leverages AI to enhance your writing experience. It combines the traditional practice of journaling with modern AI capabilities to provide personalized suggestions, extract text from images, analyze emotions, and inspire daily reflection.",
-      technologies: ["React.js", "Node.js", "Gemini AI", "MongoDB", "Express.js", "Machine Learning"],
+      technologies: ["JavaScript", "Next.js", "React", "Node.js", "Tailwind CSS", "Prisma", "PostgreSQL", "Shadcn UI"],
       features: [
         "AI-Powered Writing Suggestions: Get context-aware, personalized suggestions from Gemini AI to keep your journaling flowing",
         "Image to Text Conversion: Upload a photo of handwritten or printed text and let Gemini AI extract it directly into your journal entry",
@@ -37,7 +37,7 @@ export function ProjectsSection() {
       titleGradient: "gradient-text-purple",
       description: "A multiplayer chess playing platform with video calling feature, allowing players to connect face-to-face while playing chess online.",
       longDescription: "chessMaster is a comprehensive chess platform that combines the classic game of chess with modern video communication technology. Players can enjoy real-time chess matches while seeing and talking to their opponents through integrated video calls.",
-      technologies: ["React.js", "Node.js", "Socket.io", "WebRTC", "MongoDB", "Express.js", "Chess.js"],
+      technologies: ["TypeScript", "Next.js", "React", "Node.js", "Tailwind CSS", "Prisma", "PostgreSQL", "Shadcn UI", "WebSocket", "WebRTC"],
       features: [
         "Real-Time Video Calls: Play chess face-to-face with smooth video streaming and full audio and camera controls",
         "Create & Join Rooms: Create private rooms with custom codes to play with friends, or join existing rooms",
@@ -54,25 +54,25 @@ export function ProjectsSection() {
       image: "/images/chess-master-preview.jpg",
     },
     {
-      title: "VidCraft",
+      title: "sprintDev",
       titleGradient: "gradient-text-cyan",
-      description: "A comprehensive video editing tool that allows users to trim and download YouTube videos, merge videos, extract audio, and change video speed.",
-      longDescription: "VidCraft is a powerful video processing platform that provides essential video editing capabilities. From downloading and trimming YouTube videos to merging multiple clips and extracting audio, VidCraft makes video editing accessible and efficient.",
-      technologies: ["React.js", "Node.js", "FFmpeg", "YouTube API", "Express.js", "Multer"],
+      description: "A Jira-inspired project management platform featuring intuitive Kanban boards, powerful sprint planning, and comprehensive reporting for optimized team productivity.",
+      longDescription: "sprintDev is a comprehensive project management solution that combines the best practices of agile development with modern user experience. Built to help teams visualize their workflow, plan effective sprints, and gain valuable insights through detailed analytics.",
+      technologies: ["JavaScript", "Next.js", "React", "Node.js", "Tailwind CSS", "Prisma", "PostgreSQL", "Shadcn UI"],
       features: [
-        "YouTube Video Trimming & Download: Download YouTube videos and trim them to specific time ranges",
-        "Video Merging: Combine multiple video files into a single seamless video",
-        "Audio Extraction: Extract high-quality audio tracks from video files in various formats",
-        "Speed Control: Adjust video playback speed from 0.5x to 3x for slow motion or fast-forward effects",
-        "Format Support: Support for multiple video and audio formats (MP4, AVI, MOV, MP3, WAV, etc.)",
-        "Batch Processing: Process multiple videos simultaneously for efficient workflow"
+        "Intuitive Kanban Boards: Visualize your workflow and optimize team productivity with easy-to-use Kanban boards",
+        "Powerful Sprint Planning: Plan and manage sprints effectively, ensuring your team stays focused on delivering value",
+        "Comprehensive Reporting: Gain insights into your team's performance with detailed, customizable reports and analytics",
+        "Real-time Collaboration: Live updates and notifications keep team members synchronized across all activities",
+        "Customizable Workflows: Adapt the platform to your team's specific processes and requirements",
+        "Advanced Task Management: Create, assign, and track tasks with detailed descriptions, priorities, and deadlines"
       ],
-      status: "In Development",
+      status: "Live",
       team: "Solo Project",
-      videoUrl: "/videos/vidcraft-demo.mp4",
-      demoUrl: null,
-      githubUrl: null,
-      image: "/images/vidcraft-preview.jpg",
+      videoUrl: "/videos/sprintdev-demo.mp4",
+      demoUrl: "https://sprint-dev-delta.vercel.app/",
+      githubUrl: "https://github.com/tusharmangla19/sprintDev",
+      image: "/images/sprintdev-preview.jpg",
     },
   ];
 
@@ -99,8 +99,8 @@ export function ProjectsSection() {
     {
       title: "Spiritual Tracker",
       titleGradient: "gradient-text-blue",
-      description: "Developed a web application for ISKCON devotees to log daily spiritual practices, track progress, and motivate each other in a shared platform. Currently has 20+ active users.",
-      longDescription: "A comprehensive spiritual tracking application designed for ISKCON devotees to monitor their daily spiritual practices. The platform includes personal tracking, community features, and detailed analytics to help users maintain and improve their spiritual journey.",
+      description: "Developed a web application for members of a spiritual organization to log daily spiritual practices, track progress, and motivate each other in a shared platform.",
+      longDescription: "A comprehensive spiritual tracking application designed for members of a spiritual organization to monitor their daily spiritual practices. The platform includes personal tracking, community features, and detailed analytics to help users maintain and improve their spiritual journey.",
       technologies: ["React.js", "Firebase", "JavaScript", "CSS3", "Responsive Design"],
       features: [
         "Implemented personalized and group tracking features to foster accountability and community engagement",
@@ -152,6 +152,27 @@ export function ProjectsSection() {
       demoUrl: null,
       githubUrl: null,
       image: "/images/highlight-tool-preview.jpg",
+    },
+    {
+      title: "VidCraft",
+      titleGradient: "gradient-text-orange",
+      description: "A comprehensive video editing tool that allows users to trim and download YouTube videos, merge videos, extract audio, and change video speed.",
+      longDescription: "VidCraft is a powerful video processing platform that provides essential video editing capabilities. From downloading and trimming YouTube videos to merging multiple clips and extracting audio, VidCraft makes video editing accessible and efficient.",
+      technologies: ["JavaScript", "Next.js", "React", "Node.js", "FFmpeg", "YouTube API", "Express.js"],
+      features: [
+        "YouTube Video Trimming & Download: Download YouTube videos and trim them to specific time ranges",
+        "Video Merging: Combine multiple video files into a single seamless video",
+        "Audio Extraction: Extract high-quality audio tracks from video files in various formats",
+        "Speed Control: Adjust video playback speed from 0.5x to 3x for slow motion or fast-forward effects",
+        "Format Support: Support for multiple video and audio formats (MP4, AVI, MOV, MP3, WAV, etc.)",
+        "Batch Processing: Process multiple videos simultaneously for efficient workflow"
+      ],
+      status: "In Progress",
+      team: "Solo Project",
+      videoUrl: "/videos/vidcraft-demo.mp4",
+      demoUrl: null,
+      githubUrl: null,
+      image: "/images/vidcraft-preview.jpg",
     },
   ];
 
@@ -238,32 +259,6 @@ export function ProjectsSection() {
                   </div>
 
                   <div className="flex flex-wrap gap-2">
-                    {/* Video Dialog */}
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <Button variant="outline" size="sm" className="flex items-center gap-2 hover-lift">
-                          <Play className="h-4 w-4" />
-                          Demo
-                        </Button>
-                      </DialogTrigger>
-                      <DialogContent className="max-w-4xl">
-                        <DialogHeader>
-                          <DialogTitle className={project.titleGradient}>{project.title} - Demo</DialogTitle>
-                        </DialogHeader>
-                        <div className="aspect-video bg-muted rounded-lg flex items-center justify-center gradient-card">
-                          <div className="text-center space-y-4">
-                            <Play className="h-16 w-16 mx-auto text-muted-foreground" />
-                            <p className="text-muted-foreground">
-                              Video demo will be available soon
-                            </p>
-                            <p className="text-sm text-muted-foreground">
-                              Expected video: {project.videoUrl}
-                            </p>
-                          </div>
-                        </div>
-                      </DialogContent>
-                    </Dialog>
-
                     {/* Live Demo Button */}
                     {project.demoUrl && (
                       <Button variant="outline" size="sm" asChild className="hover-lift">

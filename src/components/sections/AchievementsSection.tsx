@@ -23,11 +23,11 @@ export function AchievementsSection() {
     },
     {
       title: "Data Structures & Algorithms",
-      description: "Solved over 200+ data structures and algorithms questions on various coding platforms",
+      description: "Solved over 250+ data structures and algorithms questions on various coding platforms",
       icon: <Code className="h-6 w-6" />,
       category: "Problem Solving",
       highlights: [
-        "200+ DSA problems solved",
+        "250+ DSA problems solved",
         "Multiple coding platforms",
         "Advanced algorithm implementation",
         "Competitive programming experience",
@@ -41,7 +41,7 @@ export function AchievementsSection() {
       icon: <Award className="h-6 w-6" />,
       category: "Professional Achievement",
       highlights: [
-        "8-month internship duration",
+        "9-month internship duration",
         "Centralized application development",
         "React Native and Firebase expertise",
         "Cross-functional team collaboration",
@@ -53,17 +53,17 @@ export function AchievementsSection() {
 
   const stats = [
     {
-      number: "4+",
+      number: "8+",
       label: "Projects Completed",
       icon: <Trophy className="h-5 w-5" />,
     },
     {
-      number: "200+",
+      number: "250+",
       label: "DSA Problems Solved",
       icon: <Code className="h-5 w-5" />,
     },
     {
-      number: "8",
+      number: "9",
       label: "Months at IIT Delhi",
       icon: <BookOpen className="h-5 w-5" />,
     },
@@ -133,10 +133,10 @@ export function AchievementsSection() {
                       {achievement.icon}
                     </div>
                     <div className="space-y-1">
-                      <CardTitle className="text-xl font-bold text-foreground">
+                      <CardTitle className="text-xl font-bold text-gray-900">
                         {achievement.title}
                       </CardTitle>
-                      <Badge variant="outline" className="text-xs">
+                      <Badge variant="outline" className="text-xs text-gray-900 border-gray-900">
                         {achievement.category}
                       </Badge>
                     </div>

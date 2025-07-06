@@ -12,14 +12,8 @@ export function EducationSection() {
       institution: "Vivekananda Institute of Professional Studies",
       location: "Delhi",
       duration: "2023-2025",
-      status: "Pursuing",
+      status: "Completed",
       description: "Advanced study in computer applications with focus on software development, database management, and emerging technologies.",
-      highlights: [
-        "Specialized in Advanced Software Development",
-        "Database Management Systems",
-        "Cloud Computing and Modern Technologies",
-        "Project Management and Team Leadership",
-      ],
     },
     {
       degree: "Bachelor in Computer Applications",
@@ -28,12 +22,6 @@ export function EducationSection() {
       duration: "2020-2023",
       status: "Completed",
       description: "Comprehensive undergraduate program covering fundamental concepts in computer science and applications.",
-      highlights: [
-        "Strong foundation in Programming Languages",
-        "Data Structures and Algorithms",
-        "Database Management Systems",
-        "Web Development Technologies",
-      ],
     },
   ];
 
@@ -77,9 +65,9 @@ export function EducationSection() {
                 <CardHeader className="bg-muted/50">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                     <div className="space-y-2">
-                      <CardTitle className="text-xl md:text-2xl font-bold text-foreground flex items-center gap-2">
+                      <CardTitle className="text-xl md:text-2xl font-bold flex items-center gap-2">
                         <GraduationCap className="h-6 w-6 text-primary" />
-                        {edu.degree}
+                        <span className="gradient-text">{edu.degree}</span>
                       </CardTitle>
                       <div className="flex flex-wrap items-center gap-4 text-muted-foreground">
                         <div className="flex items-center gap-1">
@@ -105,22 +93,10 @@ export function EducationSection() {
                   </div>
                 </CardHeader>
                 
-                <CardContent className="pt-6 space-y-6">
+                <CardContent className=" space-y-6">
                   <p className="text-muted-foreground text-lg">
                     {edu.description}
                   </p>
-                  
-                  <div className="space-y-4">
-                    <h4 className="font-semibold text-foreground">Key Areas of Study:</h4>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                      {edu.highlights.map((highlight, highlightIndex) => (
-                        <div key={highlightIndex} className="flex items-start gap-2">
-                          <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                          <span className="text-muted-foreground">{highlight}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
                 </CardContent>
               </Card>
             </motion.div>

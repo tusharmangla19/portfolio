@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { SiLeetcode, SiGeeksforgeeks } from "react-icons/si";
 import { Building2, Code, Target, FolderOpen, GraduationCap, FileText } from "lucide-react";
 import { smoothScrollToSection } from "@/lib/utils";
 
@@ -31,12 +32,22 @@ export function HeroSection() {
       icon: <FaPhone className="h-5 w-5" />,
       label: "Phone",
     },
+    {
+      href: "https://leetcode.com/u/tusharmangla001/",
+      icon: <SiLeetcode className="h-5 w-5 text-orange-500" />,
+      label: "LeetCode",
+    },
+    {
+      href: "https://www.geeksforgeeks.org/user/tusharmangla001/",
+      icon: <SiGeeksforgeeks className="h-5 w-5 text-green-600" />,
+      label: "GeeksforGeeks",
+    },
   ];
 
   const highlights = [
     {
       icon: <Building2 className="h-5 w-5 text-blue-500" />,
-      value: "8 Months",
+      value: "9 Months",
       label: "at IIT Delhi",
       gradient: "gradient-text-blue",
     },
@@ -48,13 +59,13 @@ export function HeroSection() {
     },
     {
       icon: <Target className="h-5 w-5 text-cyan-500" />,
-      value: "200+",
+      value: "250+",
       label: "DSA Problems",
       gradient: "gradient-text-cyan",
     },
     {
       icon: <FolderOpen className="h-5 w-5 text-orange-500" />,
-      value: "7",
+      value: "8",
       label: "Projects",
       gradient: "gradient-text-warm",
     },

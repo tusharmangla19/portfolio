@@ -2,6 +2,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { 
   Code, 
@@ -32,7 +33,9 @@ import {
   SiEthereum, 
   SiOpenai,
   SiSocketdotio,
-  SiWebrtc
+  SiWebrtc,
+  SiGeeksforgeeks,
+  SiLeetcode
 } from "react-icons/si";
 
 export function SkillsSection() {
@@ -189,17 +192,36 @@ export function SkillsSection() {
           className="mt-16 text-center"
         >
           <Card className="inline-block p-8 gradient-card hover-lift transition-all duration-300">
-            <div className="space-y-4">
+            <div className="space-y-6">
               <h3 className="text-xl font-semibold gradient-text-purple">
                 Problem Solving
               </h3>
               <p className="text-muted-foreground">
-                Solved over <span className="font-bold gradient-text-cyan">200+</span> data structures and algorithms questions
+                Solved over <span className="font-bold gradient-text-cyan">250+</span> data structures and algorithms questions across multiple platforms
               </p>
               <div className="flex flex-wrap justify-center gap-3">
-               
-                
-                
+                <Button variant="outline" size="sm" asChild className="hover-lift">
+                  <a
+                    href="https://leetcode.com/u/tusharmangla001/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2"
+                  >
+                    <SiLeetcode className="h-4 w-4 text-orange-500" />
+                    LeetCode
+                  </a>
+                </Button>
+                <Button variant="outline" size="sm" asChild className="hover-lift">
+                  <a
+                    href="https://www.geeksforgeeks.org/user/tusharmangla001/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2"
+                  >
+                    <SiGeeksforgeeks className="h-4 w-4 text-green-600" />
+                    GeeksforGeeks
+                  </a>
+                </Button>
               </div>
             </div>
           </Card>

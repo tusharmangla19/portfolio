@@ -102,25 +102,25 @@ export function AboutSection() {
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              className="space-y-6"
-            >
+            transition={{ duration: 0.8 }}
+            className="space-y-6"
+          >
               <div className="space-y-4">
                 <h3 className="text-2xl font-semibold gradient-text-blue">
                   My Story
-                </h3>
+            </h3>
                 <div className="space-y-4 text-muted-foreground">
-                  <p>
+              <p>
                     Hey there! I&apos;m currently pursuing my <span className="gradient-text-purple font-semibold">Master of Computer Applications (MCA)</span> 
                     at Vivekananda Institute of Professional Studies, where I&apos;ve been diving deep into 
                     advanced software development concepts and emerging technologies.
-                  </p>
-                  <p>
+              </p>
+              <p>
                     My breakthrough came during my internship at <span className="gradient-text-cyan font-semibold">IIT Delhi</span>, 
                     where I developed a centralized parent application for the CSC Bal Vidyalaya Program using React Native and Firebase. 
                     This experience taught me the importance of scalable, user-focused solutions.
-                  </p>
-                  <p>
+              </p>
+              <p>
                     What drives me is the intersection of <span className="gradient-text-warm font-semibold">creativity and technology</span>. 
                     I love taking complex problems and breaking them down into elegant, user-friendly solutions. 
                     Whether it&apos;s building responsive web applications, developing mobile apps, or exploring 
@@ -135,8 +135,8 @@ export function AboutSection() {
                 <Badge variant="outline" className="hover-lift">🤝 Team Player</Badge>
                 <Badge variant="outline" className="hover-lift">📚 Lifelong Learner</Badge>
                 <Badge variant="outline" className="hover-lift">💡 Creative Thinker</Badge>
-              </div>
-            </motion.div>
+            </div>
+          </motion.div>
 
             {/* Right Column - Values */}
             <motion.div
@@ -196,13 +196,13 @@ export function AboutSection() {
                   or brainstorming the next big idea. I believe that great software comes from understanding not just the 
                   technology, but the people who use it.
                 </p>
-                <div className="flex flex-wrap justify-center gap-3">
+            <div className="flex flex-wrap justify-center gap-3">
                   <Badge variant="secondary" className="hover-lift">🌐 Web Development</Badge>
                   <Badge variant="secondary" className="hover-lift">📱 Mobile Apps</Badge>
                   <Badge variant="secondary" className="hover-lift">☁️ Cloud Technologies</Badge>
                   <Badge variant="secondary" className="hover-lift">🎨 UI/UX Design</Badge>
                   <Badge variant="secondary" className="hover-lift">📊 Data Solutions</Badge>
-                </div>
+            </div>
               </CardContent>
             </Card>
           </motion.div>
