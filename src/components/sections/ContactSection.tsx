@@ -171,9 +171,7 @@ export function ContactSection() {
                     size="lg"
                     className="w-full"
                     onClick={() => {
-                      // This would trigger a download of the resume
-                      // For now, it's a placeholder
-                      alert("Resume download will be implemented soon!");
+                     window.open("https://drive.google.com/file/d/1w_QnzN5j7KQIy7QjdD9kkJ1z7as840QV/view?usp=sharing", "_blank");
                     }}
                   >
                     <Download className="h-5 w-5 mr-2" />
