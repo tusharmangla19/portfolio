@@ -229,7 +229,7 @@ export function HeroSection() {
               className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold hover-lift hover-glow transition-all duration-300 shadow-lg"
             >
               <a
-                href="https://drive.google.com/file/d/14bYgvXpYe2InhVj1WNDhQKZ6IzITZ6Sb/view?usp=sharing"
+                href="https://drive.google.com/file/d/1w_QnzN5j7KQIy7QjdD9kkJ1z7as840QV/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
