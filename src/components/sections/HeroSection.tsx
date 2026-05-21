@@ -7,8 +7,9 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { SiLeetcode, SiGeeksforgeeks } from "react-icons/si";
-import { Building2, Code, Target, FolderOpen, GraduationCap, FileText } from "lucide-react";
+import { Code, Target, FolderOpen, FileText } from "lucide-react";
 import { smoothScrollToSection } from "@/lib/utils";
+import Image from "next/image";
 
 export function HeroSection() {
   const socialLinks = [
@@ -46,13 +47,13 @@ export function HeroSection() {
 
   const highlights = [
     {
-      icon: <img src="/images/foodhub.webp" alt="Foodhub" className="h-6 w-6 object-contain" />,
+      icon: <Image src="/images/foodhub.webp" alt="Foodhub" width={24} height={24} className="h-6 w-6 object-contain" />,
       value: "SDE",
       label: "@ foodhub",
       gradient: "bg-gradient-to-r from-rose-500 to-orange-500 text-transparent bg-clip-text drop-shadow-sm font-extrabold",
     },
     {
-      icon: <img src="/images/iit-delhi.png" alt="IIT Delhi" className="h-6 w-6 object-contain" />,
+      icon: <Image src="/images/iit-delhi.png" alt="IIT Delhi" width={24} height={24} className="h-6 w-6 object-contain" />,
       value: "Ex IIT Delhi",
       label: "Intern",
       gradient: "gradient-text-blue",

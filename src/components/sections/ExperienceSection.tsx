@@ -3,7 +3,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
-import { MapPin, Calendar, Building2, Users, Target } from "lucide-react";
+import { MapPin, Calendar, Users, Target } from "lucide-react";
+import Image from "next/image";
 
 export function ExperienceSection() {
   return (
@@ -37,7 +38,7 @@ export function ExperienceSection() {
                       Software Engineer
                     </CardTitle>
                     <div className="flex items-center gap-2 text-lg font-semibold gradient-text-purple">
-                      <img src="/images/foodhub.webp" alt="Foodhub" className="h-5 w-5 object-contain" />
+                      <Image src="/images/foodhub.webp" alt="Foodhub" width={20} height={20} className="h-5 w-5 object-contain" />
                       Foodhub Software Solutions
                     </div>
                   </div>
@@ -140,7 +141,7 @@ export function ExperienceSection() {
                       Full Stack Developer Intern
                     </CardTitle>
                     <div className="flex items-center gap-2 text-lg font-semibold gradient-text-purple">
-                      <img src="/images/iit-delhi.png" alt="IIT Delhi" className="h-5 w-5 object-contain" />
+                      <Image src="/images/iit-delhi.png" alt="IIT Delhi" width={20} height={20} className="h-5 w-5 object-contain" />
                       IIT Delhi
                     </div>
                   </div>
