@@ -149,7 +149,7 @@ export function HeroSection() {
               transition={{ duration: 0.5, delay: 0.5 }}
               className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4"
             >
-             MCA graduate and full-stack developer specializing in end-to-end application development. Building everything from AI-powered tools to multiplayer platforms across web and mobile.
+              Software Engineer specializing in high-performance, full-stack application development. Experienced in building and scaling everything from AI-powered tools to real-time multiplayer platforms across web and mobile.
             </motion.p>
           </div>
 
