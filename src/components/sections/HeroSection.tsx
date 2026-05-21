@@ -46,9 +46,15 @@ export function HeroSection() {
 
   const highlights = [
     {
-      icon: <Building2 className="h-5 w-5 text-blue-500" />,
-      value: "9 Months",
-      label: "at IIT Delhi",
+      icon: <img src="/images/foodhub.webp" alt="Foodhub" className="h-6 w-6 object-contain" />,
+      value: "SDE",
+      label: "@ foodhub",
+      gradient: "bg-gradient-to-r from-rose-500 to-orange-500 text-transparent bg-clip-text drop-shadow-sm font-extrabold",
+    },
+    {
+      icon: <img src="/images/iit-delhi.png" alt="IIT Delhi" className="h-6 w-6 object-contain" />,
+      value: "Ex IIT Delhi",
+      label: "Intern",
       gradient: "gradient-text-blue",
     },
     {
@@ -68,12 +74,6 @@ export function HeroSection() {
       value: "8",
       label: "Projects",
       gradient: "gradient-text-warm",
-    },
-    {
-      icon: <GraduationCap className="h-5 w-5 text-green-500" />,
-      value: "MCA",
-      label: "Graduate",
-      gradient: "gradient-text-blue",
     },
   ];
 
@@ -229,7 +229,7 @@ export function HeroSection() {
               className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold hover-lift hover-glow transition-all duration-300 shadow-lg"
             >
               <a
-                href="https://drive.google.com/file/d/1w_QnzN5j7KQIy7QjdD9kkJ1z7as840QV/view?usp=sharing"
+                href="https://drive.google.com/file/d/1RQCai2Ar68uRwcekTsPsx9OPD-3Owsuh/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"

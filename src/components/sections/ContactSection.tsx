@@ -171,7 +171,7 @@ export function ContactSection() {
                     size="lg"
                     className="w-full"
                     onClick={() => {
-                     window.open("https://drive.google.com/file/d/1w_QnzN5j7KQIy7QjdD9kkJ1z7as840QV/view?usp=sharing", "_blank");
+                     window.open("https://drive.google.com/file/d/1RQCai2Ar68uRwcekTsPsx9OPD-3Owsuh/view?usp=sharing", "_blank");
                     }}
                   >
                     <Download className="h-5 w-5 mr-2" />
